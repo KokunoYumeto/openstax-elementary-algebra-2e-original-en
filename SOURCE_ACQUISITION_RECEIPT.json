@@ -1,0 +1,62 @@
+{
+  "checks": [
+    "preservation ZIP safe unique names and CRC",
+    "preservation manifest/checksum exact payload closure",
+    "source and media authority manifest hashes",
+    "collection and source-manifest module order",
+    "official archive safe unique names and CRC",
+    "official collection/module/license bytes, SHA-256 and Git blob identities",
+    "all media bytes, SHA-256 and Git blob identities",
+    "all media image signatures decode",
+    "exact CNXML image-use closure",
+    "bounded rehash of every admitted output path"
+  ],
+  "closure": {
+    "collection": "collections/elementary-algebra-2e.collection.xml",
+    "image_uses": 4024,
+    "media_bytes": 194271847,
+    "media_files": 4018,
+    "module_bytes": 10222228,
+    "ordered_modules": 82
+  },
+  "images": {
+    "canonical_asset_manifest": {
+      "bytes": 744894,
+      "path": "authority/original-assets.tsv",
+      "sha256": "19e26c86ccbffa9b7ca2cc63211eef7e7ed307cc601b654c3feb06384a35bcc8"
+    },
+    "declared_mime_signature_differences": 2543,
+    "formats": {
+      "JPEG": 4015,
+      "PNG": 3
+    }
+  },
+  "official_upstream_archive": {
+    "bytes": 537455794,
+    "duplicate_member_names": 0,
+    "entry_prefix": "osbooks-prealgebra-bundle-38cae454e644abf9f0a623e876994553881597c9/",
+    "removed_after_exact_closure_extraction": true,
+    "sha256": "effdf2dbb6dfd9cab771b568c6575d8074be4a1f9565f1fedbd54f621e138917",
+    "url": "https://codeload.github.com/openstax/osbooks-prealgebra-bundle/zip/38cae454e644abf9f0a623e876994553881597c9",
+    "zip_crc_pass": true
+  },
+  "preservation_package": {
+    "bytes": 7264274,
+    "checksums": {
+      "bytes": 56670,
+      "sha256": "f464ad3193b8d5036440db1a68174f41f813ef7474ee28114189d8eeed8ad9e6"
+    },
+    "entries": 430,
+    "manifest": {
+      "bytes": 86262,
+      "sha256": "6f631f3a3ec98e582c23f7c88ea17a26414d1d5c9125d47bb9fa6b3343368003"
+    },
+    "path": "elementary-algebra-2e-id-ID-1.0.3-source.zip",
+    "payload_entries": 428,
+    "payload_uncompressed_bytes": 49220290,
+    "sha256": "77a6ecfa22c4a5b58b0b7f72e5ec9db11ac4656bc7fc9c4944a4a7916a2472f3"
+  },
+  "schema": "openstax-elementary-original-source-acquisition/1",
+  "source_revision": "38cae454e644abf9f0a623e876994553881597c9",
+  "source_tree": "7907e4c81d43de1c3b6da173f0eb273c01dc5b55"
+}

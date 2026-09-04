@@ -1,0 +1,98 @@
+{
+  "asset_rights_linkage": {
+    "asset_records": 4024,
+    "asset_use_rights_records": 4024,
+    "checks": {
+      "asset_ids_duplicate": 0,
+      "asset_media_byte_mismatches": 0,
+      "asset_media_git_blob_sha1_mismatches": 0,
+      "asset_media_sha256_mismatches": 0,
+      "asset_paths_missing_from_media_manifest": 0,
+      "assets_missing_resolved_rights_record": 0,
+      "assets_missing_rights_id": 0,
+      "component_attribution_records_unlocatable_in_source_xml": 0,
+      "component_attribution_text_source_caption_mismatches": 0,
+      "inheritance_id_mismatches": 0,
+      "license_id_or_url_mismatches": 0,
+      "missing_required_asset_fields": 0,
+      "missing_rights_evidence_paths": 0,
+      "orphan_asset_use_rights_records": 0,
+      "rights_evidence_paths_outside_col31130": 0,
+      "rights_ids_duplicate": 0,
+      "rights_subject_id_mismatches": 0,
+      "status_mismatches": 0
+    },
+    "mapping_aggregate_definition": "UTF-8 SHA-256 over asset-ID-sorted lines joining asset ID, rights ID, rights subject ID, source path, source occurrence, media SHA-256, inheritance ID, license ID, license URL, third-party status, review status, and record status with vertical bars and LF separators",
+    "mapping_aggregate_sha256": "7af3dcffd0f01060ca6e64054fa4debf3b62e34ec7d4ee4896e62041b6539355",
+    "repeated_asset_uses": 6,
+    "total_rights_records": 4025,
+    "unique_asset_ids": 4024,
+    "unique_source_paths": 4018,
+    "work_default_rights_records": 1
+  },
+  "explicit_credit_witnesses": [
+    {
+      "asset_id": "urn:il:v1:asset:a085f878-49cd-576e-baf3-829fa8b1de4d",
+      "asset_path": "media/CNX_ElemAlg_Figure_04_00_001_img_new.jpg",
+      "creator_platform_figure_id_and_image_src_preserved_in_target": true,
+      "figure_id": "CNX_ElemAlg_Figure_04_00_001",
+      "module_id": "m82479",
+      "review_status": "needs_component_review",
+      "rights_id": "urn:il:v1:rights:1e20738e-bf1a-5585-8a97-69f6afe2d5bb",
+      "source_caption": "This graph illustrates the annual vehicle sales of gas motorcycles, gas cars, and electric vehicles from 1994 to 2010. It is a line graph with x- and y-axes, one of the most common types of graphs. (credit: Steve Jurvetson, Flickr)",
+      "source_caption_exact_in_rights_record": true,
+      "source_credit_contains_standalone_component_license_url": false,
+      "source_module_sha256": "11359ef93240afac73da457cef99f43f9f822d0cc31f92384da0e0284db17571",
+      "target_caption": "Grafik ini menggambarkan penjualan tahunan sepeda motor berbahan bakar bensin, mobil berbahan bakar bensin, dan kendaraan listrik dari 1994 hingga 2010. Grafik ini merupakan grafik garis dengan sumbu x dan sumbu y, salah satu jenis grafik yang paling umum. (kredit: Steve Jurvetson, Flickr)",
+      "target_module_sha256": "07c047f225583ac68edafec324e9ea4f369731af2be1f98ac3fe28158f021cf2",
+      "third_party_status": "credit_present_unverified"
+    },
+    {
+      "asset_id": "urn:il:v1:asset:8a30292e-d2fa-56ca-bb96-269040be6f92",
+      "asset_path": "media/CNX_ElemAlg_Figure_10_00_001_img_new.jpg",
+      "creator_platform_modification_relation_figure_id_and_image_src_preserved_in_target": true,
+      "figure_id": "CNX_ElemAlg_Figure_10_00_001",
+      "module_id": "m82554",
+      "review_status": "needs_component_review",
+      "rights_id": "urn:il:v1:rights:e2521468-688b-50e9-80eb-b733fc3cd222",
+      "source_caption": "Fireworks accompany festive celebrations around the world. (Credit: modification of work by tlc, Flickr)",
+      "source_caption_exact_in_rights_record": true,
+      "source_credit_contains_standalone_component_license_url": false,
+      "source_module_sha256": "14bac37adacd4865bb1ac6117aa5ad9a66a2349ccfe8df537050321b6d54963b",
+      "target_caption": "Kembang api mengiringi perayaan meriah di seluruh dunia. (Kredit: modifikasi karya tlc, Flickr)",
+      "target_module_sha256": "bd98979f9f1d4c6b7c41b377f4e76cf0ae4df3fe362da8c3c1d671580c9fec18",
+      "third_party_status": "credit_present_unverified"
+    }
+  ],
+  "notice": "Original CNXML captions and credits remain controlling. Component uncertainty is preserved and this summary does not independently relicense any asset.",
+  "preserved_component_status": {
+    "asset_use_records_with_exact_source_caption_match": 48,
+    "asset_use_records_with_nonempty_source_attribution_text": 48,
+    "asset_use_status_counts": {
+      "active": 4024
+    },
+    "interpretation": "Each asset-use record inherits the work-default license ID and URL through inheritance_id. For records whose third_party_status is unreviewed or credit_present_unverified, those inherited fields are not a standalone component-license witness or a clearance claim.",
+    "review_status_counts": {
+      "needs_component_review": 4024
+    },
+    "third_party_status_counts": {
+      "credit_present_unverified": 2,
+      "unreviewed": 4022
+    }
+  },
+  "schema": "openstax-elementary-original-rights-summary/1",
+  "source_revision": "38cae454e644abf9f0a623e876994553881597c9",
+  "status": "PASS_PRESERVED_UNCERTAINTY_NOT_CLEARANCE",
+  "work_default_rights_record": {
+    "attribution_text": "Elementary Algebra 2e, OpenStax, Rice University.",
+    "evidence_path": "collections/elementary-algebra-2e.collection.xml",
+    "id": "urn:il:v1:rights:0e0d65d5-0493-58b6-94c9-ddb64be66202",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "review_status": "collection_authority_confirmed_component_review_required",
+    "scope_kind": "work_default",
+    "status": "active",
+    "subject_id": "urn:il:v1:work:c1b39754-2c6f-5dbf-adbe-f75756679e6a",
+    "third_party_status": "component_exceptions_possible"
+  }
+}

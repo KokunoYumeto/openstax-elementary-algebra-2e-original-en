@@ -1,0 +1,48 @@
+{
+  "access": {
+    "external_hyperlinks_not_network_checked": 299,
+    "original_website": "https://openstax.org/details/books/elementary-algebra-2e",
+    "paired_pages": 84,
+    "program_website": "https://kokunoyumeto.github.io/program-matematika-indonesia/en/",
+    "remote_rendering_dependencies": 0,
+    "unresolved_local_references": 0
+  },
+  "checks": [
+    "exact output inventory bytes and hashes",
+    "source manifest and order",
+    "native ID order",
+    "independent normalized visible-prose equality",
+    "semantic element counts",
+    "MathML expanded-name/attribute/text signatures",
+    "generated cross-reference labels and destinations",
+    "list presentation contract",
+    "paired access on every page",
+    "original component credits and license",
+    "local resource closure and no remote rendering runtime"
+  ],
+  "content": {
+    "component_credits": 2,
+    "generated_cross_references": 455,
+    "lists": 822,
+    "mathml": 20491
+  },
+  "limitations": [
+    "No browser visual or assistive-technology certification",
+    "External hyperlinks not network checked",
+    "Independent prose comparison normalizes whitespace; builder separately preserves every exact source text-slot byte signature"
+  ],
+  "output": {
+    "bytes": 222341198,
+    "files": 4108,
+    "manifest_bytes": 3221497,
+    "manifest_sha256": "c7490facafc534e9ddcbf6e407dbf7c48f4238dce7163ae384c06e48b99fd094",
+    "output_inventory_sha256_excluding_manifest": "7394db03202e93002d17f0cebf3960ee1b7ddb8d6596e39990b287d198e92ea8"
+  },
+  "schema": "openstax-original-reader-independent-validation/1",
+  "source": {
+    "bytes": 10222228,
+    "modules": 82,
+    "native_ids": 55180
+  },
+  "status": "pass"
+}

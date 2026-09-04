@@ -1,0 +1,265 @@
+{
+  "schema": "ea2.id_id.final-rights-freeze-receipt.v1",
+  "recorded_at": "2026-08-29T17:10:34Z",
+  "status": "PASS_PRESERVED_UNCERTAINTY_NOT_CLEARANCE",
+  "scope": {
+    "corpus": "OpenStax Elementary Algebra 2e",
+    "collection_id": "col31130",
+    "collection_uuid": "55931856-c627-418b-a56f-1dd0007683a8",
+    "module_count": 82,
+    "repository": "https://github.com/openstax/osbooks-prealgebra-bundle",
+    "commit": "38cae454e644abf9f0a623e876994553881597c9",
+    "tree": "7907e4c81d43de1c3b6da173f0eb273c01dc5b55",
+    "excluded_corpora": [
+      "OpenStax Prealgebra 2e",
+      "OpenStax Intermediate Algebra 2e",
+      "OpenStax Precalculus 2e"
+    ]
+  },
+  "source_license_and_credit_authority": {
+    "license": {
+      "path": "authority/source/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "license_id": "CC-BY-NC-SA-4.0",
+      "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "release_copy_byte_identical": true
+    },
+    "repository_readme": {
+      "path": "authority/source/README.md",
+      "sha256": "158ffba799594279d784587ee9a46cdf331fad43285d69abefe772a9f8fa8288"
+    },
+    "collection": {
+      "path": "authority/source/collections/elementary-algebra-2e.collection.xml",
+      "sha256": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72",
+      "license_text": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "preface": {
+      "source_path": "authority/source/modules/m82630/index.cnxml",
+      "source_sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b",
+      "target_path": "work/translated-modules/m82630/index.cnxml",
+      "target_sha256": "015098db38e15422185f5d179c94b2d07dd3c074f2d4468ab65f75518fc732dd",
+      "preserved_surfaces": [
+        "OpenStax and content-contributor attribution",
+        "noncommercial limitation",
+        "ShareAlike requirement",
+        "permission-specific artwork limitations",
+        "commercial-reuse contact limitation",
+        "fallback Rice University/OpenStax art attribution"
+      ]
+    },
+    "source_authority_manifest": {
+      "path": "authority/SOURCE_AUTHORITY_MANIFEST.csv",
+      "sha256": "b817c9bfbd1dcba59f1e6949a83727a662bf95407882634620cd46b625b6a5f2"
+    },
+    "media_authority_manifest": {
+      "path": "authority/MEDIA_AUTHORITY_MANIFEST.csv",
+      "rows": 4018,
+      "unique_paths": 4018,
+      "sha256": "3b8478b77c8860363b7000cbffa68782320e73458289bdcda957acf1b971210f"
+    }
+  },
+  "asset_rights_linkage": {
+    "asset_records": 4024,
+    "unique_asset_ids": 4024,
+    "unique_source_paths": 4018,
+    "repeated_asset_uses": 6,
+    "asset_use_rights_records": 4024,
+    "work_default_rights_records": 1,
+    "total_rights_records": 4025,
+    "checks": {
+      "asset_ids_duplicate": 0,
+      "rights_ids_duplicate": 0,
+      "assets_missing_rights_id": 0,
+      "assets_missing_resolved_rights_record": 0,
+      "rights_subject_id_mismatches": 0,
+      "orphan_asset_use_rights_records": 0,
+      "inheritance_id_mismatches": 0,
+      "status_mismatches": 0,
+      "license_id_or_url_mismatches": 0,
+      "missing_required_asset_fields": 0,
+      "missing_rights_evidence_paths": 0,
+      "rights_evidence_paths_outside_col31130": 0,
+      "component_attribution_records_unlocatable_in_source_xml": 0,
+      "component_attribution_text_source_caption_mismatches": 0,
+      "asset_paths_missing_from_media_manifest": 0,
+      "asset_media_byte_mismatches": 0,
+      "asset_media_sha256_mismatches": 0,
+      "asset_media_git_blob_sha1_mismatches": 0
+    },
+    "mapping_aggregate_sha256": "7af3dcffd0f01060ca6e64054fa4debf3b62e34ec7d4ee4896e62041b6539355",
+    "mapping_aggregate_definition": "UTF-8 SHA-256 over asset-ID-sorted lines joining asset ID, rights ID, rights subject ID, source path, source occurrence, media SHA-256, inheritance ID, license ID, license URL, third-party status, review status, and record status with vertical bars and LF separators"
+  },
+  "live_media_manifest_replay": {
+    "method": "bounded replay of the 4,018 explicit authority/MEDIA_AUTHORITY_MANIFEST.csv paths; no directory or workspace discovery scan",
+    "files_rehashed": 4018,
+    "missing_files": 0,
+    "byte_mismatches": 0,
+    "sha256_mismatches": 0,
+    "live_tuple_aggregate_sha256": "dbdf51e5db621ea536cf8c8ff815a528b872485e2a1e6f13df6b33fa4ff45d91",
+    "live_tuple_aggregate_definition": "UTF-8 SHA-256 over relative-path-sorted lines joining path, live bytes, live SHA-256, and frozen Git blob SHA-1 with vertical bars and LF separators"
+  },
+  "work_default_rights_record": {
+    "id": "urn:il:v1:rights:0e0d65d5-0493-58b6-94c9-ddb64be66202",
+    "subject_id": "urn:il:v1:work:c1b39754-2c6f-5dbf-adbe-f75756679e6a",
+    "scope_kind": "work_default",
+    "status": "active",
+    "license_id": "CC-BY-NC-SA-4.0",
+    "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution_text": "Elementary Algebra 2e, OpenStax, Rice University.",
+    "evidence_path": "collections/elementary-algebra-2e.collection.xml",
+    "third_party_status": "component_exceptions_possible",
+    "review_status": "collection_authority_confirmed_component_review_required"
+  },
+  "preserved_component_status": {
+    "asset_use_status_counts": {
+      "active": 4024
+    },
+    "third_party_status_counts": {
+      "unreviewed": 4022,
+      "credit_present_unverified": 2
+    },
+    "review_status_counts": {
+      "needs_component_review": 4024
+    },
+    "asset_use_records_with_nonempty_source_attribution_text": 48,
+    "asset_use_records_with_exact_source_caption_match": 48,
+    "interpretation": "Each asset-use record inherits the work-default license ID and URL through inheritance_id. For records whose third_party_status is unreviewed or credit_present_unverified, those inherited fields are not a standalone component-license witness or a clearance claim."
+  },
+  "explicit_credit_witnesses": [
+    {
+      "rights_id": "urn:il:v1:rights:1e20738e-bf1a-5585-8a97-69f6afe2d5bb",
+      "asset_id": "urn:il:v1:asset:a085f878-49cd-576e-baf3-829fa8b1de4d",
+      "asset_path": "media/CNX_ElemAlg_Figure_04_00_001_img_new.jpg",
+      "module_id": "m82479",
+      "figure_id": "CNX_ElemAlg_Figure_04_00_001",
+      "source_module_sha256": "11359ef93240afac73da457cef99f43f9f822d0cc31f92384da0e0284db17571",
+      "target_module_sha256": "07c047f225583ac68edafec324e9ea4f369731af2be1f98ac3fe28158f021cf2",
+      "source_caption": "This graph illustrates the annual vehicle sales of gas motorcycles, gas cars, and electric vehicles from 1994 to 2010. It is a line graph with x- and y-axes, one of the most common types of graphs. (credit: Steve Jurvetson, Flickr)",
+      "target_caption": "Grafik ini menggambarkan penjualan tahunan sepeda motor berbahan bakar bensin, mobil berbahan bakar bensin, dan kendaraan listrik dari 1994 hingga 2010. Grafik ini merupakan grafik garis dengan sumbu x dan sumbu y, salah satu jenis grafik yang paling umum. (kredit: Steve Jurvetson, Flickr)",
+      "source_caption_exact_in_rights_record": true,
+      "creator_platform_figure_id_and_image_src_preserved_in_target": true,
+      "source_credit_contains_standalone_component_license_url": false,
+      "third_party_status": "credit_present_unverified",
+      "review_status": "needs_component_review"
+    },
+    {
+      "rights_id": "urn:il:v1:rights:e2521468-688b-50e9-80eb-b733fc3cd222",
+      "asset_id": "urn:il:v1:asset:8a30292e-d2fa-56ca-bb96-269040be6f92",
+      "asset_path": "media/CNX_ElemAlg_Figure_10_00_001_img_new.jpg",
+      "module_id": "m82554",
+      "figure_id": "CNX_ElemAlg_Figure_10_00_001",
+      "source_module_sha256": "14bac37adacd4865bb1ac6117aa5ad9a66a2349ccfe8df537050321b6d54963b",
+      "target_module_sha256": "bd98979f9f1d4c6b7c41b377f4e76cf0ae4df3fe362da8c3c1d671580c9fec18",
+      "source_caption": "Fireworks accompany festive celebrations around the world. (Credit: modification of work by tlc, Flickr)",
+      "target_caption": "Kembang api mengiringi perayaan meriah di seluruh dunia. (Kredit: modifikasi karya tlc, Flickr)",
+      "source_caption_exact_in_rights_record": true,
+      "creator_platform_modification_relation_figure_id_and_image_src_preserved_in_target": true,
+      "source_credit_contains_standalone_component_license_url": false,
+      "third_party_status": "credit_present_unverified",
+      "review_status": "needs_component_review"
+    }
+  ],
+  "backend_evidence": {
+    "asset_jsonl": {
+      "path": "backend/exports/jsonl/asset.jsonl",
+      "sha256": "b805490e2e95fa63f9ea079e6a02529ed5968d53d7504a6ae3bfe6b2cb736662"
+    },
+    "rights_jsonl": {
+      "path": "backend/exports/jsonl/rights.jsonl",
+      "sha256": "419391c8c4ade1b55ca1641e0dbba314b175e91c6279cdd974b76c59335dd0a6"
+    },
+    "asset_csv": {
+      "path": "backend/exports/csv/asset.csv",
+      "sha256": "292dac3f60cee83aef3f4c5adb925ca3a002d6f221f7fa9ede72429608fd7b54"
+    },
+    "rights_csv": {
+      "path": "backend/exports/csv/rights.csv",
+      "sha256": "aa896ceeff8535001aa51be84d949f0f35b269c931482b1a3ec351e62bc0aad8"
+    },
+    "export_manifest": {
+      "path": "backend/exports/manifest.json",
+      "sha256": "f2fbc4ca7d23f72efa29fa07a4eb03b2a4296e4cc84d51e1a1efa0dd03d05924"
+    }
+  },
+  "release_bundle_binding": {
+    "source_zip": {
+      "path": "publication/zenodo/1.0.0/elementary-algebra-2e-id-ID-1.0.0-source.zip",
+      "bytes": 4389098,
+      "sha256": "38d327f2e5268d4728d5467051b97a814d801f107948ee150a50fb66e89178a9",
+      "license_entry_sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "rights_document_present": true,
+      "credit_bearing_source_and_target_modules_present": true
+    },
+    "backend_zip": {
+      "path": "publication/zenodo/1.0.0/elementary-algebra-2e-id-ID-1.0.0-backend-core.zip",
+      "bytes": 107988165,
+      "sha256": "0bdfed2316ec68ce706c0f2f1eee3d61f029013479accfb627b0b1b549885d48",
+      "asset_jsonl_entry_sha256": "b805490e2e95fa63f9ea079e6a02529ed5968d53d7504a6ae3bfe6b2cb736662",
+      "rights_jsonl_entry_sha256": "419391c8c4ade1b55ca1641e0dbba314b175e91c6279cdd974b76c59335dd0a6"
+    },
+    "release_manifest": {
+      "path": "publication/zenodo/1.0.0/elementary-algebra-2e-id-ID-1.0.0-release-manifest.json",
+      "sha256": "fe2376aeb5dbcdec15bf9398689abe7b72af70c7a46dd29f5fab34ed0137baaa",
+      "license_qualification": "subject to component-specific credits and restrictions"
+    },
+    "release_profile": {
+      "path": "publication/release-profiles/1.0.0.json",
+      "sha256": "8809d80c24283b6925a7bdabfb887fe8ad03c01538a38ad5a1d95d2a996e7746",
+      "component_specific_credits_and_restrictions_controlling": true,
+      "nonendorsement_stated": true
+    }
+  },
+  "published_wording_and_readback": {
+    "zenodo": {
+      "record_url": "https://zenodo.org/records/22163663",
+      "doi": "10.5281/zenodo.22163663",
+      "public_license_id": "cc-by-nc-sa-4.0",
+      "public_description_qualifies_component_specific_credits_and_restrictions": true,
+      "public_description_states_nonendorsement": true,
+      "anonymous_full_byte_readback": "pass",
+      "receipt_path": "publication/zenodo/1.0.0/ZENODO_PUBLICATION_RECEIPT.json",
+      "receipt_sha256": "31d341d09696fa3ae68606868dc2039540ed71985d64e76539c05556f079b1b0"
+    },
+    "github": {
+      "release_url": "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-id/releases/tag/v1.0.0",
+      "readme_sha256": "1e1a2bcf7ef7b28ddcf1457322f97d4900b10a39e8d9642fa17c4d28eb6c10bb",
+      "release_notes_sha256": "a056605e7e6949598240bf08fbdc69a56525b7ada87860dcac1102aebd23cc40",
+      "publication_root_sha256": "97230367e950836b851cf0a7223e96d5284289aa9cd85afa3f8759b0e43b149c",
+      "component_specific_qualification_present": true,
+      "nonendorsement_stated": true,
+      "anonymous_release_and_root_readback": "pass",
+      "receipt_path": "publication/github/1.0.0/GITHUB_PUBLICATION_RECEIPT.json",
+      "receipt_sha256": "b954883d2262abc733a85bda53f83b84154d0b2d3649cb5cbe206148dbe9f023"
+    }
+  },
+  "documentation": {
+    "path": "02_SOURCE_AUTHORITY_AND_RIGHTS.md",
+    "bytes": 8062,
+    "sha256": "2af24db8cf0b0ec5e3b5b81e5f27cc1884a390cf234c01a53c662167e2272fae",
+    "stale_clearance_checklist_superseded": true
+  },
+  "conclusion": {
+    "rights_preservation_requirement_satisfied": true,
+    "source_relationships_and_component_rights_preserved": true,
+    "source_credit_license_and_status_fields_preserved": true,
+    "uncertain_and_unreviewed_component_statuses_preserved_explicitly": true,
+    "release_wording_overclaims_clearance": false,
+    "generalized_third_party_clearance_claimed": false,
+    "legal_advice_provided": false,
+    "reason": "The edition preserves the exact work-level license and attribution, binds every asset use to an evidence-bearing component-rights record, keeps all component uncertainty explicit, preserves both named third-party credits through translation and packaging, and qualifies every audited release surface so the work-level license is not presented as independent clearance of all components."
+  },
+  "mutation_boundary": {
+    "files_updated": [
+      "02_SOURCE_AUTHORITY_AND_RIGHTS.md",
+      "qa/final-completion/RIGHTS_FREEZE_RECEIPT_20260829.json"
+    ],
+    "authority_or_media_modified": false,
+    "backend_code_tests_registry_or_exports_modified": false,
+    "reader_modified": false,
+    "corrections_modified": false,
+    "publication_modified": false,
+    "other_corpus_modified": false
+  }
+}

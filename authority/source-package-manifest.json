@@ -1,0 +1,31 @@
+{
+  "authority": {
+    "image_uses": 4024,
+    "media_bytes": 194271847,
+    "media_files": 4018,
+    "media_manifest_sha256": "3b8478b77c8860363b7000cbffa68782320e73458289bdcda957acf1b971210f",
+    "module_bytes": 10222228,
+    "ordered_modules": 82,
+    "source_manifest_rows": 88,
+    "source_manifest_sha256": "b817c9bfbd1dcba59f1e6949a83727a662bf95407882634620cd46b625b6a5f2",
+    "source_revision": "38cae454e644abf9f0a623e876994553881597c9",
+    "source_tree": "7907e4c81d43de1c3b6da173f0eb273c01dc5b55"
+  },
+  "preservation_source_zip": {
+    "bytes": 7264274,
+    "checksums": {
+      "bytes": 56670,
+      "sha256": "f464ad3193b8d5036440db1a68174f41f813ef7474ee28114189d8eeed8ad9e6"
+    },
+    "entries": 430,
+    "manifest": {
+      "bytes": 86262,
+      "sha256": "6f631f3a3ec98e582c23f7c88ea17a26414d1d5c9125d47bb9fa6b3343368003"
+    },
+    "path": "elementary-algebra-2e-id-ID-1.0.3-source.zip",
+    "payload_entries": 428,
+    "payload_uncompressed_bytes": 49220290,
+    "sha256": "77a6ecfa22c4a5b58b0b7f72e5ec9db11ac4656bc7fc9c4944a4a7916a2472f3"
+  },
+  "schema": "openstax-elementary-original-source-package/1"
+}

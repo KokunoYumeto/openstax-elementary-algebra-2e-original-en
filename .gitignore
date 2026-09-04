@@ -1,0 +1,10 @@
+/output/rejected-*/
+/output/.html-*.staging/
+/output/.isolated-*/
+/release/
+/elementary-algebra-2e-id-ID-1.0.3-source.zip
+/upstream-*.zip
+/upstream-*.zip.part
+/**/__pycache__/
+*.pyc
+

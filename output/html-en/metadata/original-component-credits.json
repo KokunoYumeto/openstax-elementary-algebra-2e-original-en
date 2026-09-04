@@ -1,0 +1,42 @@
+{
+  "complete_component_status": {
+    "asset_use_records_with_exact_source_caption_match": 48,
+    "asset_use_records_with_nonempty_source_attribution_text": 48,
+    "asset_use_status_counts": {
+      "active": 4024
+    },
+    "interpretation": "Each asset-use record inherits the work-default license ID and URL through inheritance_id. For records whose third_party_status is unreviewed or credit_present_unverified, those inherited fields are not a standalone component-license witness or a clearance claim.",
+    "review_status_counts": {
+      "needs_component_review": 4024
+    },
+    "third_party_status_counts": {
+      "credit_present_unverified": 2,
+      "unreviewed": 4022
+    }
+  },
+  "components": [
+    {
+      "figure_id": "CNX_ElemAlg_Figure_04_00_001",
+      "module_id": "m82479",
+      "review_status": "needs_component_review",
+      "rights_id": "urn:il:v1:rights:1e20738e-bf1a-5585-8a97-69f6afe2d5bb",
+      "source_asset_path": "media/CNX_ElemAlg_Figure_04_00_001_img_new.jpg",
+      "source_caption_text": "This graph illustrates the annual vehicle sales of gas motorcycles, gas cars, and electric vehicles from 1994 to 2010. It is a line graph with x- and y-axes, one of the most common types of graphs. (credit: Steve Jurvetson, Flickr)",
+      "standalone_component_license_url_present": false,
+      "third_party_status": "credit_present_unverified"
+    },
+    {
+      "figure_id": "CNX_ElemAlg_Figure_10_00_001",
+      "module_id": "m82554",
+      "review_status": "needs_component_review",
+      "rights_id": "urn:il:v1:rights:e2521468-688b-50e9-80eb-b733fc3cd222",
+      "source_asset_path": "media/CNX_ElemAlg_Figure_10_00_001_img_new.jpg",
+      "source_caption_text": "Fireworks accompany festive celebrations around the world. (Credit: modification of work by tlc, Flickr)",
+      "standalone_component_license_url_present": false,
+      "third_party_status": "credit_present_unverified"
+    }
+  ],
+  "notice": "Specific captions, credits, limitations, and unresolved component-review states remain controlling. No component is relicensed by this inventory.",
+  "source_preface": "modules/m82630/index.html",
+  "uncredited_art_attribution_from_preface": "Copyright Rice University, OpenStax, under CC BY-NC-SA 4.0 license."
+}
