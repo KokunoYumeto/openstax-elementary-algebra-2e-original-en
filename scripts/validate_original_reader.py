@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output/html-en"
 CN = "http://cnx.rice.edu/cnxml"; MD = "http://cnx.rice.edu/mdml"; MATH = "http://www.w3.org/1998/Math/MathML"
 ORIGINAL = "https://openstax.org/details/books/elementary-algebra-2e"
-PROGRAM = "https://kokunoyumeto.github.io/program-matematika-indonesia/en/"
+PROGRAM_EN = "https://kokunoyumeto.github.io/program-matematika-indonesia/en/#course-A10"
+PROGRAM_ID = "https://kokunoyumeto.github.io/program-matematika-indonesia/id/#course-A10"
 
 def sha(data): return hashlib.sha256(data).hexdigest()
 def stable(value): return (json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True)+"\n").encode()
@@ -88,7 +89,10 @@ def main():
     for path,doc in parsed.items():
         actions=doc.xpath("//nav[@class='paired-access']/a")
         paired.append((path.relative_to(OUT).as_posix(),[(a.get("href"),a.get("hreflang"),normalized_text(a)) for a in actions]))
-        assert doc.get("lang")=="en" and sum(a.get("href")==ORIGINAL for a in actions)==1 and sum(a.get("href")==PROGRAM for a in actions)==1
+        assert doc.get("lang")=="en" and len(actions)==4
+        assert sum(a.get("href")==ORIGINAL and a.get("hreflang")=="en" for a in actions)==1
+        assert sum(a.get("href")==PROGRAM_EN and a.get("hreflang")=="en" and a.get("rel")=="home" for a in actions)==1
+        assert sum(a.get("href")==PROGRAM_ID and a.get("hreflang")=="id" and a.get("rel")=="home" for a in actions)==1
         forbidden.extend((path.relative_to(OUT).as_posix(),etree.QName(x).localname) for x in doc.xpath("//script|//iframe|//object|//embed"))
         for node,attribute in [(n,"href") for n in doc.xpath("//a[@href]")]+[(n,"src") for n in doc.xpath("//img[@src]")]+[(n,"href") for n in doc.xpath("//link[@rel='stylesheet']")]:
             raw=node.get(attribute); parts=urlsplit(raw)
@@ -153,11 +157,11 @@ def main():
       "output":{"files":len(actual)+1,"bytes":sum(p.stat().st_size for p in actual.values())+len(manifest_bytes),"manifest_bytes":len(manifest_bytes),"manifest_sha256":sha(manifest_bytes),"output_inventory_sha256_excluding_manifest":manifest["outputs"]["inventory_stream_sha256"]},
       "source":{"modules":82,"bytes":sum(int(r["bytes"]) for r in sources),"native_ids":sum(len([x for x in root.iter() if x.get("id")]) for root in source_roots.values())},
       "content":{"mathml":sum(len(root.xpath("//*[local-name()='math']")) for root in source_roots.values()),"generated_cross_references":xref_total,"lists":sum(source_lists.values()),"component_credits":len(credits)},
-      "access":{"paired_pages":len(paired),"original_website":ORIGINAL,"program_website":PROGRAM,"unresolved_local_references":0,"remote_rendering_dependencies":0,"external_hyperlinks_not_network_checked":sum(external.values())},
+      "access":{"paired_pages":len(paired),"original_website":ORIGINAL,"program_websites":{"en":PROGRAM_EN,"id":PROGRAM_ID},"unresolved_local_references":0,"remote_rendering_dependencies":0,"external_hyperlinks_not_network_checked":sum(external.values())},
       "checks":["exact output inventory bytes and hashes","source manifest and order","native ID order","independent normalized visible-prose equality","semantic element counts","MathML expanded-name/attribute/text signatures","generated cross-reference labels and destinations","list presentation contract","paired access on every page","original component credits and license","local resource closure and no remote rendering runtime"],
       "limitations":["No browser visual or assistive-technology certification","External hyperlinks not network checked","Independent prose comparison normalizes whitespace; builder separately preserves every exact source text-slot byte signature"],
     }
-    data=stable(receipt); path=ROOT/"INDEPENDENT_READER_VALIDATION_V2.json"
+    data=stable(receipt); path=ROOT/"INDEPENDENT_READER_VALIDATION_V3.json"
     if path.exists():assert path.read_bytes()==data
     else:path.write_bytes(data)
     print(json.dumps(receipt,ensure_ascii=False,sort_keys=True));print(f"Receipt {len(data)} bytes SHA-256 {sha(data)}")

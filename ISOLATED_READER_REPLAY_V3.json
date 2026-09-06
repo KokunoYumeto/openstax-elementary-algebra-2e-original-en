@@ -1,0 +1,29 @@
+{
+  "builder_stdout_sha256": "8240c1db02a90ae4d620ac9a70fe6c7353cac899ec2094c57ff2a44582122623",
+  "byte_identical": true,
+  "independent_validation": {
+    "bytes": 1825,
+    "sha256": "00e8a6e38a55fba0102032e77f59121069487f6fbf012deacc0f7a0a632c30d9",
+    "stdout_sha256": "b0b9b648e615b058e71bc8dab527b7ab68beacf087afb2f61052a7352ec14607"
+  },
+  "inputs": {
+    "input_files_total": 4110,
+    "media_files": 4018,
+    "modules": 82
+  },
+  "live_reader": {
+    "bytes": 222358586,
+    "files": 4108,
+    "manifest_sha256": "d8e902d27778af08400ba0fa6d3061d3d7006d776d5323ca46baf9f3b1f80181"
+  },
+  "method": "isolated directory; manifest-enumerated same-volume hardlinks for immutable source bytes; independently copied scripts; full build and independent validator",
+  "replay_reader": {
+    "bytes": 222358586,
+    "files": 4108,
+    "manifest_sha256": "d8e902d27778af08400ba0fa6d3061d3d7006d776d5323ca46baf9f3b1f80181"
+  },
+  "replay_root_removed_after_verification": true,
+  "schema": "openstax-elementary-original-reader-isolated-replay/1",
+  "source_revision": "38cae454e644abf9f0a623e876994553881597c9",
+  "status": "pass"
+}

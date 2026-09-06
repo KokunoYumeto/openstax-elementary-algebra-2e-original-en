@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the original OpenStax book and identify this repository as the HTML preservation mirror."
 title: "Elementary Algebra 2e: original English program-hosted reader"
 type: software
-version: 1.0.0
-date-released: 2026-09-04
+version: 1.0.1
+date-released: 2026-09-06
 authors:
   - family-names: Marecek
     given-names: Lynn
@@ -16,4 +16,3 @@ publisher:
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/KokunoYumeto/openstax-elementary-algebra-2e-original-en"
 url: "https://openstax.org/details/books/elementary-algebra-2e"
-

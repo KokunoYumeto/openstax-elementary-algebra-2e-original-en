@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REPLAY = ROOT / "output" / ".isolated-a10-replay"
 LIVE = ROOT / "output" / "html-en"
-RECEIPT = ROOT / "ISOLATED_READER_REPLAY.json"
+RECEIPT = ROOT / "ISOLATED_READER_REPLAY_V3.json"
 
 
 def sha(data: bytes) -> str:
@@ -136,7 +136,7 @@ def main() -> None:
             if live_bytes != replay_bytes or (len(live_bytes), sha(live_bytes)) != expected:
                 raise RuntimeError(f"Isolated replay byte mismatch: {relative}")
         live_manifest = (LIVE / "volume.manifest.json").read_bytes()
-        replay_validation = REPLAY / "INDEPENDENT_READER_VALIDATION_V2.json"
+        replay_validation = REPLAY / "INDEPENDENT_READER_VALIDATION_V3.json"
         receipt = {
             "schema": "openstax-elementary-original-reader-isolated-replay/1",
             "status": "pass",

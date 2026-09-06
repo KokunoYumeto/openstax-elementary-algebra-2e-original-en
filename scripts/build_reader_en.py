@@ -61,7 +61,12 @@ EDITION_NOTICE_TEXT = (
     "mirror. The original website remains available for updates and services."
 )
 ORIGINAL_WEBSITE = "https://openstax.org/details/books/elementary-algebra-2e"
-PROGRAM_WEBSITE = "https://kokunoyumeto.github.io/program-matematika-indonesia/en/"
+PROGRAM_WEBSITE_EN = (
+    "https://kokunoyumeto.github.io/program-matematika-indonesia/en/#course-A10"
+)
+PROGRAM_WEBSITE_ID = (
+    "https://kokunoyumeto.github.io/program-matematika-indonesia/id/#course-A10"
+)
 SOURCE_REVISION = "38cae454e644abf9f0a623e876994553881597c9"
 AUTHORITY_HASHES = {
     "collections/elementary-algebra-2e.collection.xml": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72",
@@ -1096,11 +1101,31 @@ def html_document(title: str, css_href: str, body: etree._Element) -> bytes:
     title_node.text = title
     etree.SubElement(head, "link", rel="stylesheet", href=css_href)
     etree.SubElement(head, "link", rel="alternate", hreflang="en", href=ORIGINAL_WEBSITE)
-    access = etree.Element("nav", {"class": "paired-access", "aria-label": "Book access and original publisher"})
+    access = etree.Element(
+        "nav",
+        {
+            "class": "paired-access",
+            "aria-label": "Course navigation and original publisher",
+        },
+    )
+    program_en = etree.SubElement(
+        access,
+        "a",
+        href=PROGRAM_WEBSITE_EN,
+        hreflang="en",
+        rel="home",
+    )
+    program_en.text = "Mathematics program — English"
+    program_id = etree.SubElement(
+        access,
+        "a",
+        href=PROGRAM_WEBSITE_ID,
+        hreflang="id",
+        rel="home",
+    )
+    program_id.text = "Program matematika — Bahasa Indonesia"
     original = etree.SubElement(access, "a", href=ORIGINAL_WEBSITE, hreflang="en", **{"class": "original-source-link"})
     original.text = "Original OpenStax website ↗"
-    program = etree.SubElement(access, "a", href=PROGRAM_WEBSITE)
-    program.text = "Mathematics program"
     print_link = etree.SubElement(access, "a", href=css_href.replace("reader-id.css", "print.html"))
     print_link.text = "Whole-book reading / print view"
     if "print-view" in body.get("class", "").split():
@@ -2297,7 +2322,8 @@ def build() -> dict[str, object]:
         if (page.get("lang") != "en" or len(source_actions) != 1
             or source_actions[0].get("href") != ORIGINAL_WEBSITE
             or source_actions[0].get("hreflang") != "en"
-            or not page.xpath("//nav[@class='paired-access']/a[@href=$url]", url=PROGRAM_WEBSITE)):
+            or not page.xpath("//nav[@class='paired-access']/a[@href=$url and @hreflang='en']", url=PROGRAM_WEBSITE_EN)
+            or not page.xpath("//nav[@class='paired-access']/a[@href=$url and @hreflang='id']", url=PROGRAM_WEBSITE_ID)):
             paired_access_failures.append(relative)
         if page.xpath("//script | //iframe | //object | //embed"):
             offline_dependency_failures.append(relative)

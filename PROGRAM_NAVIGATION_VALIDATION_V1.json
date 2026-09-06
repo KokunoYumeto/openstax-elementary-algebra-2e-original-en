@@ -1,0 +1,17 @@
+{
+  "content_language": "en",
+  "course_id": "A10",
+  "credentials_recorded": false,
+  "html_bytes": 24084193,
+  "html_files": 84,
+  "html_inventory_sha256": "55e6ffa340c6ad51d5bfc9b93ec535c8dacba68c6b6e7c9bdf095ce4ef776a32",
+  "navigation_instances_per_page": 1,
+  "reader_root": "C:\\Users\\Floris\\Documents\\interlanguage\\outputs\\01a01ec1-e685-70d0-b022-211396334723\\curriculum_logbook\\federated-nav-work\\original-en\\a10\\output\\html-en",
+  "required_links": [
+    "https://kokunoyumeto.github.io/program-matematika-indonesia/en/#course-A10",
+    "https://kokunoyumeto.github.io/program-matematika-indonesia/id/#course-A10",
+    "https://openstax.org/details/books/elementary-algebra-2e"
+  ],
+  "schema": "program-reader-navigation-validation/1",
+  "status": "pass"
+}
